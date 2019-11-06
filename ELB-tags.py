@@ -2,7 +2,7 @@ import boto3
 client = boto3.client('elbv2')
 response = client.add_tags(
     ResourceArns=[
-        'arn:aws:elasticloadbalancing:eu-west-1:378457291432:loadbalancer/app/CBSUATAE/f7e453515bf16ed1',
+        'arn:aws:elasticloadbalancing:',
     ],
     Tags=[
         {
@@ -23,7 +23,7 @@ response = client.add_tags(
         },
         {
             'Key': 'Name',
-            'Value': 'EBSFESUAT01',
+            'Value': 'Instancename',
         },
     ]
 )
